@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="LineAttr">
+        <attr name="lineColor" format="color" />
+        <attr name="lineHeight" format="dimension" />
+        <attr name="lineStyle">
+            <enum name="line" value="0" />
+            <enum name="dot" value="1" />
+        </attr>
+        <attr name="linePositon">
+            <enum name="top" value="1" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="dotWidth" format="integer" />
+        <attr name="specWidth" format="integer" />
+    </declare-styleable>
+    
+    
+    <declare-styleable name="SwipeListView">
+        <attr name="swipeOpenOnLongPress" format="boolean" />
+        <attr name="swipeAnimationTime" format="integer" />
+        <attr name="swipeOffsetLeft" format="dimension" />
+        <attr name="swipeOffsetRight" format="dimension" />
+        <attr name="swipeCloseAllItemsWhenMoveList" format="boolean" />
+        <attr name="swipeFrontView" format="reference" />
+        <attr name="swipeBackView" format="reference" />
+        <attr name="swipeMode" format="enum">
+            <enum name="none" value="0" />
+            <enum name="both" value="1" />
+            <enum name="right" value="2" />
+            <enum name="left" value="3" />
+        </attr>
+        <attr name="swipeActionLeft" format="enum">
+            <enum name="reveal" value="0" />
+            <enum name="dismiss" value="1" />
+            <enum name="choice" value="2" />
+        </attr>
+        <attr name="swipeActionRight" format="enum">
+            <enum name="reveal" value="0" />
+            <enum name="dismiss" value="1" />
+            <enum name="choice" value="2" />
+        </attr>
+        <attr name="swipeDrawableChecked" format="reference" />
+        <attr name="swipeDrawableUnchecked" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="BGABanner">
+        <attr name="pointContainerWidth" format="dimension">
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="pointContainerHeight" format="dimension">
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="pointContainerBackground" format="reference|color" />
+        <attr name="pointFocusedImg" format="reference" />
+        <attr name="pointUnfocusedImg" format="reference" />
+        <attr name="pointSpacing" format="dimension" />
+        <attr name="pointEdgeSpacing" format="dimension" />
+        <attr name="pointVisibility" format="boolean" />
+        <attr name="pointAutoPlayAble" format="boolean" />
+        <attr name="pointAutoPlayInterval" format="integer" />
+        <attr name="pointGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_horizontal" value="0x01" />
+        </attr>
+    </declare-styleable>
+
+</resources>

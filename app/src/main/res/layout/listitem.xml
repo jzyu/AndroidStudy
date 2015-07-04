@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:id="@+id/ItemTitle"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:hint="Title"
+        android:textColor="#444444"
+        />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/network_image_view"
+        android:layout_width="120dp"
+        android:layout_height="96dp"
+        android:layout_below="@+id/ItemTitle"
+        />
+    <TextView
+        android:id="@+id/ItemText"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:minLines="1"
+        android:maxLines="4"
+        android:textSize = "12sp"
+        android:hint="desc"
+        android:layout_below="@+id/ItemTitle"
+        android:layout_toRightOf="@+id/network_image_view"
+        android:textColor="#898989"
+        android:paddingTop="2dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="2dp"
+        />
+    <TextView
+        android:id="@+id/ItemUpdateDt"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textSize="12sp"
+        android:hint="发布时间: 2015-06-12 20:45"
+        android:layout_below="@id/ItemText"
+        android:layout_toRightOf="@+id/network_image_view"
+        android:gravity="right"
+        android:textColor="#898989"
+        />
+</RelativeLayout>

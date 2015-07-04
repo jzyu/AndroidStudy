@@ -1,0 +1,2 @@
+python querydb.py
+pause

@@ -1,0 +1,1 @@
+adb shell rm -r /data/data/com.gofish.szhd/databases/szhd.db

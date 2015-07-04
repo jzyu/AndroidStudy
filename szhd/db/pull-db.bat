@@ -1,0 +1,1 @@
+adb pull -p /data/data/com.gofish.szhd/databases/szhd.db .

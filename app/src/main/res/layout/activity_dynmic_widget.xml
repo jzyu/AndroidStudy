@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:FlowLayout="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.gofish.study.DynmicWidgetActivity">
+
+    <TextView
+        android:id="@+id/tip"
+        android:text="动态增加删除控件"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/button_add"
+        android:layout_below="@id/tip"
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/button_remove"
+        android:layout_below="@id/button_add"
+        android:text="Remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.wohuizhong.client.app.widget.FlowLayout
+        android:id="@+id/tag_container"
+        android:layout_below="@id/button_remove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        FlowLayout:horizontalSpacing="15dip"
+        FlowLayout:verticalSpacing="5dip"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+    </com.wohuizhong.client.app.widget.FlowLayout>
+
+</RelativeLayout>

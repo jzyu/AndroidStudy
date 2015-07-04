@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/button_start_download"
+        android:text="Start"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/button_stop_download"
+        android:text="Stop"/>
+    <ProgressBar
+        android:id="@+id/download_progress_bar"
+        android:padding="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="100"/>
+</LinearLayout>

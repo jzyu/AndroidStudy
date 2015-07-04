@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/button_start_service"
+        android:text="StartService"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/button_stop_service"
+        android:text="StopService"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/button_bind_service"
+        android:text="BindService"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/button_unbind_service"
+        android:text="UnbindService"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/button_start_foreground_service"
+        android:text="StartForegroundService"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/button_stop_foreground_service"
+        android:text="StopForegroundService"/>
+
+</LinearLayout>
